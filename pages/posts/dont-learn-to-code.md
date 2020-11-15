@@ -1,6 +1,7 @@
 ---
 title: "Don't learn to code! (Well, maybe don't.)"
 date: "2020-11-14"
+status: draft
 ---
 Way back in the early 2010s, I seriously considered doing a _2nd_ Masters degree in Computer Science. Why? I wanted a job in tech to help me get out of a dead-end bar job. After a BA in _Ancient History_, and an MA in _Social and Global Justice_ (aka politics), I was convinced I'd made all the wrong decisions. As far as my perspective taught me, a good job in tech required a CS education.p;[] After a personal crisis left me with no dead-end job and 1 month of rent money in the bank, I didn't have the luxury of considering further further education. To cut things short, I got lucky! I managed to land myself a job as an Acquisitions Editor at a local publishing house who specialised in programming books. 
 

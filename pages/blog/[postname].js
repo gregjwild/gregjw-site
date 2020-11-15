@@ -6,12 +6,16 @@ import Layout from '../../components/Layout'
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>
-
+  
   return (
       <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
         <article>
           <h1>{frontmatter.title}</h1>
-          <p>By {frontmatter.author}</p>
+          <p>First Published: {frontmatter.date}</p>
+          {
+            frontmatter.updated? <p>Updated: {frontmatter.updated}</p> : null
+          }
+          <hr/>
           <div>
             <ReactMarkdown source={markdownBody} />
           </div>

@@ -8,14 +8,15 @@ export default function PostList({ posts }) {
             {!posts && <div>No posts!</div>}
             <ul>
             {posts &&
-                posts.map((post) => {
-                return (
-                    <li key={post.slug}>
-                    <Link href={{ pathname: `/blog/${post.slug}` }}>
-                        <a>{post.frontmatter.title}</a>
-                    </Link>
-                    </li>
-                )
+                posts.map(post => {
+                    if (post.frontmatter.status === "published") {
+                    return (
+                        <li key={post.slug}>
+                        <Link href={{ pathname: `/blog/${post.slug}` }}>
+                            <a>{post.frontmatter.title}</a>
+                        </Link>
+                        </li>
+                    )}
                 })}
             </ul>
         </div>
