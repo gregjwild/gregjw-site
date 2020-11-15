@@ -8,7 +8,7 @@ exports.modules = {
 /*! exports provided: title, description, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"title\":\"Blog\",\"description\":\"It's a blog!\"}");
+module.exports = JSON.parse("{\"title\":\"Greg J. Wild\",\"description\":\"All things Greg J. Wild, all the time.\"}");
 
 /***/ })
 

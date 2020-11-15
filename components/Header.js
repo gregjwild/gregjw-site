@@ -5,12 +5,16 @@ export default function Header() {
   return (
     <>
       <header className="header">
+        <h1>Greg J. Wild</h1>
         <nav className="nav">
           <Link href="/">
-            <a>My Blog</a>
+            <a>Home</a>
           </Link>
           <Link href="/about">
             <a>About</a>
+          </Link>
+          <Link href="/blog">
+            <a>Blog</a>
           </Link>
         </nav>
       </header>
