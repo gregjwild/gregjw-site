@@ -3,9 +3,8 @@ title: "The obligatory post about what I made my blog with"
 date: "2019-09-22"
 updated: "2020-11-15"
 status: "published"
+summary: "I originally wrote the site in Gatsby. Plot-twist! It's now using Next.js instead."
 ---
-**Update**: This article is a historical artifact. I originally wrote the site in Gatsby, and instead decided to switch over to Next.js instead. Perhaps I shall blog about this in the future :)
-
 I seriously considered building this in pure HTML & CSS. Blogs should only ever be as complicated as they need to be. Requirements are simple:
 
 For the reader:

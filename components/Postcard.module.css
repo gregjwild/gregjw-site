@@ -1,0 +1,9 @@
+.Postcard {
+    list-style: none;
+    display: flex;
+    margin: 1em 0;
+}
+
+.Postcard > * {
+    flex: auto;
+}

@@ -2,6 +2,7 @@
 title: "Book Review: Digital Minimalism, by Cal Newport"
 date: "2019-09-24"
 status: "published"
+summary: "Cal Newport makes a powerful case for reducing your use of digital products."
 ---
 
 I'm convinced that at some point his editor probably encouraged Cal Newport to call *Digital Minimalism* 'Deep Leisure'. Newport sets out a manifesto for living in control of technology, rather than letting technology control you.  To anyone who has read *Deep Work*, Newport's focus on, well, focus, will find his new book familiar.  This time, he takes aim at your leisure time, conceding early on that digital tools you need for work are not optional. It's a book about intentional, rather than compulsive use of technology. It's about creation over consumption.  

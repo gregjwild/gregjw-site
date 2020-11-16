@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Postcard from './Postcard.js'
 
 export default function PostList({ posts }) {
     if (posts === 'undefined') return null;
@@ -8,14 +9,10 @@ export default function PostList({ posts }) {
             {!posts && <div>No posts!</div>}
             <ul>
             {posts &&
-                posts.map(post => {
+                posts.map((post, index) => {
                     if (post.frontmatter.status === "published") {
                     return (
-                        <li key={post.slug}>
-                        <Link href={{ pathname: `/blog/${post.slug}` }}>
-                            <a>{post.frontmatter.title}</a>
-                        </Link>
-                        </li>
+                        <Postcard post={post} key={index}/>
                     )}
                 })}
             </ul>

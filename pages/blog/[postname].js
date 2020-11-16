@@ -13,7 +13,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           <h1>{frontmatter.title}</h1>
           <p>First Published: {frontmatter.date}</p>
           {
-            frontmatter.updated? <p>Updated: {frontmatter.updated}</p> : null
+            frontmatter.updated ? <p>Last Updated: {frontmatter.updated}</p> : null
           }
           <hr/>
           <div>

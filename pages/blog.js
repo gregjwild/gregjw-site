@@ -6,10 +6,7 @@ import matter from 'gray-matter';
 const Blog = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
-      <h1 className="title">Welcome to my blog!</h1>
-      <p className="description">
-        {description}
-      </p>
+      <h1 className="title">The Blog</h1>
       <main>
         <PostList posts={posts}/>
       </main>
