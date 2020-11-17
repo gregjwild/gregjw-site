@@ -26,7 +26,7 @@ export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`)
 
   // Posts
-  const posts = ((context) => {
+  const postsRaw = ((context) => {
     const keys = context.keys()
     const values = keys.map(context)
 
@@ -43,6 +43,29 @@ export async function getStaticProps() {
     return data;
 
   })(require.context('./posts', true, /\.md$/)); 
+
+  // Convert posts to dates 
+  const postsWithDatesConverted = postsRaw => {
+      return postsRaw.map(post => {
+          post.frontmatter.date = new Date(post.frontmatter.date);
+          return post;
+      });
+  }
+
+  /* Sort dates
+    We use slice to avoid mutating postsRaw in place.
+    We need to reverse the array, otherwise they'll be displayed oldest-first.
+  */
+  const postsSorted = postsWithDatesConverted(postsRaw)
+    .slice()
+    .sort((a, b) => a.frontmatter.date - b.frontmatter.date)
+    .reverse()
+
+  // Convert dates to strings (as we need our function to return JSON);
+  const posts = postsSorted.map(post => {
+      post.frontmatter.date = post.frontmatter.date.toISOString().slice(0,10)
+      return post
+  })
 
   return {
     props: {
