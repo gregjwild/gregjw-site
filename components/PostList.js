@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import Postcard from './Postcard.js'
+import styles from './PostList.module.css';
+import Postcard from './Postcard.js';
 
 export default function PostList({ posts }) {
     if (posts === 'undefined') return null;
 
     return (
-        <div>
+        <div className={styles.container}>
             {!posts && <div>No posts!</div>}
-            <ul>
+            <ul className={styles.PostList}>
             {posts &&
                 posts.map((post, index) => {
                     if (post.frontmatter.status === "published") {

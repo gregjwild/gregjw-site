@@ -1,9 +1,7 @@
 .Postcard {
     list-style: none;
-    display: flex;
-    margin: 1em 0;
-}
-
-.Postcard > * {
-    flex: auto;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
 }
