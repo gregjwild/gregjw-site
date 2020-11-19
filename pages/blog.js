@@ -1,12 +1,13 @@
 import Layout from "../components/Layout";
 import PostList from '../components/PostList';
 import matter from 'gray-matter';
+import styles from './blog.module.css';
 
 /* Here's what we're rendering in the index */
 const Blog = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
-      <h1 className="title">The Blog</h1>
+      <h1 className={styles.title}>The Blog</h1>
       <main>
         <PostList posts={posts}/>
       </main>
