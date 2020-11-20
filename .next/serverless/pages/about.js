@@ -103,7 +103,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "QIKc");
+/******/ 	return __webpack_require__(__webpack_require__.s = "OVQe");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1150,35 +1150,42 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head);
 var next_link = __webpack_require__("YFqc");
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
-// CONCATENATED MODULE: ./components/Header.js
+// EXTERNAL MODULE: ./components/Header.module.css
+var Header_module = __webpack_require__("FZLu");
+var Header_module_default = /*#__PURE__*/__webpack_require__.n(Header_module);
 
+// CONCATENATED MODULE: ./components/Header.js
 
 
 // Link is a default Next js compontent, enabling client-side transitions between routes.
 
+
 function Header() {
-  return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
-    children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("header", {
-      className: "header",
-      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
-        children: "Greg J. Wild"
-      }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("nav", {
-        className: "nav",
-        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
-          href: "/",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
-            children: "Home"
-          })
-        }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
-          href: "/blog",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
-            children: "Blog"
-          })
-        })]
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("header", {
+    className: Header_module_default.a.Header,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
+      children: "Greg J. Wild"
+    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("nav", {
+      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+        href: "/",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
+          className: Header_module_default.a.navItem,
+          children: "Home"
+        })
+      }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+        href: "/blog",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
+          className: Header_module_default.a.navItem,
+          children: "Blog"
+        })
       })]
-    })
+    })]
   });
 }
+// EXTERNAL MODULE: ./components/Layout.module.css
+var Layout_module = __webpack_require__("ZWax");
+var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
+
 // CONCATENATED MODULE: ./components/Layout.js
 
 
@@ -1187,6 +1194,7 @@ function Header() {
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 
 
 
@@ -1205,34 +1213,35 @@ function Layout(_ref) {
       }), /*#__PURE__*/Object(jsx_runtime["jsx"])("title", {
         children: pageTitle
       })]
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(Header, {}), /*#__PURE__*/Object(jsx_runtime["jsxs"])("main", {
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(Header, {}), /*#__PURE__*/Object(jsx_runtime["jsx"])("main", {
       style: {
         margin: '2.5% 20%'
       },
-      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("section", {
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])("section", {
         className: "layout",
         children: /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
           className: "content",
           children: children
         })
-      }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("footer", {
-        children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("p", {
-          children: ["This work is licensed under a ", /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
-            rel: "license",
-            href: "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            children: " Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-          }), "i.e. feel free to use it, modify it, and share it, but please attribute it to me, and use this license yourself. If by some small chance you think there's a way to monetize anything, let's talk!"]
-        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
+      })
+    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("footer", {
+      className: Layout_module_default.a.footer,
+      children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("p", {
+        children: ["This work is licensed under a ", /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
           rel: "license",
           href: "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
-            alt: "Creative Commons Licence",
-            style: {
-              borderWidth: 0
-            },
-            src: "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
-          })
-        })]
+          children: " Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+        }), "i.e. feel free to use it, modify it, and share it, but please attribute it to me, and use this license yourself. If by some small chance you think there's a way to monetize anything, let's talk!"]
+      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
+        rel: "license",
+        href: "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
+          alt: "Creative Commons Licence",
+          style: {
+            borderWidth: 0
+          },
+          src: "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+        })
       })]
     })]
   });
@@ -2051,6 +2060,18 @@ if (false) {}
 
 /***/ }),
 
+/***/ "FZLu":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"Header": "Header_Header__3JIzU",
+	"navItem": "Header_navItem__27E-S"
+};
+
+
+/***/ }),
+
 /***/ "Fw1r":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2338,7 +2359,7 @@ exports.__esModule=true;exports.sendPayload=sendPayload;var _utils=__webpack_req
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-fa276ba060a4a8ac7eef.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/Wwheg5vlODKMgIqLqWSGt/_buildManifest.js\",\"static/Wwheg5vlODKMgIqLqWSGt/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.09ed1a84230aa1e62a3a.js\",\"static/chunks/pages/index-937477369d326ba3901c.js\"],\"/_app\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/css/4621ac7f71c3e841bd3f.css\",\"static/chunks/pages/_app-13970027b61c7d6c7d9f.js\"],\"/_error\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/pages/_error-4c0e59626af2fe2052a1.js\"],\"/about\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.09ed1a84230aa1e62a3a.js\",\"static/chunks/pages/about-09ef74b865edecdfdb30.js\"],\"/blog\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.09ed1a84230aa1e62a3a.js\",\"static/css/ab4c8d036fc6fc596c8e.css\",\"static/chunks/pages/blog-5b5b94bcc9c8addf3244.js\"],\"/blog/[postname]\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.09ed1a84230aa1e62a3a.js\",\"static/chunks/pages/blog/[postname]-870a9d1ddfbc930c2134.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-fa276ba060a4a8ac7eef.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/ckXE3fQRlBtlBzVS1F3zE/_buildManifest.js\",\"static/ckXE3fQRlBtlBzVS1F3zE/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.16ea560e6c96e3a6a794.js\",\"static/css/eaea2f18b63714119084.css\",\"static/chunks/pages/index-9c6fb6234aac3041b6eb.js\"],\"/_app\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/css/c58244e7a3489cc6a025.css\",\"static/chunks/pages/_app-453b8cc592611763368b.js\"],\"/_error\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/pages/_error-4c0e59626af2fe2052a1.js\"],\"/about\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.16ea560e6c96e3a6a794.js\",\"static/css/eaea2f18b63714119084.css\",\"static/chunks/pages/about-4ccf0be02a7031cf190b.js\"],\"/blog\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.16ea560e6c96e3a6a794.js\",\"static/css/efb12e176f607bd42115.css\",\"static/chunks/pages/blog-24b81cd83dd1e34e5a54.js\"],\"/blog/[postname]\":[\"static/chunks/main-d283b4ab393ebd284c3e.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.9707fddd9ae5927c17c3.js\",\"static/chunks/commons.e3c12cb767780eaa6561.js\",\"static/chunks/3425e8918f7e08358e78c23bab4cdd9d7afa0876.16ea560e6c96e3a6a794.js\",\"static/css/eaea2f18b63714119084.css\",\"static/chunks/pages/blog/[postname]-bf25c0a2165fc0589b1b.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -2561,122 +2582,7 @@ module.exports = require("buffer");
 
 /***/ }),
 
-/***/ "OaTm":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-exports.__esModule=true;exports.default=optimize;async function optimize(html,config){let AmpOptimizer;try{AmpOptimizer=__webpack_require__("8C61");}catch(_){return html;}const optimizer=AmpOptimizer.create(config);return optimizer.transformHtml(html,config);}
-//# sourceMappingURL=optimize-amp.js.map
-
-/***/ }),
-
-/***/ "PCLx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-exports.__esModule=true;exports.apiResolver=apiResolver;exports.parseBody=parseBody;exports.getCookieParser=getCookieParser;exports.sendStatusCode=sendStatusCode;exports.redirect=redirect;exports.sendData=sendData;exports.sendJson=sendJson;exports.tryGetPreviewData=tryGetPreviewData;exports.sendError=sendError;exports.setLazyProp=setLazyProp;exports.ApiError=exports.SYMBOL_PREVIEW_DATA=void 0;var _contentType=__webpack_require__("g6Ax");var _etag=_interopRequireDefault(__webpack_require__("Z3Jd"));var _fresh=_interopRequireDefault(__webpack_require__("IuXR"));var _rawBody=_interopRequireDefault(__webpack_require__("CMUe"));var _stream=__webpack_require__("msIP");var _utils=__webpack_require__("g/15");var _cryptoUtils=__webpack_require__("S6s8");var _loadComponents=__webpack_require__("AWHq");function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}async function apiResolver(req,res,query,resolverModule,apiContext,propagateError,onError){const apiReq=req;const apiRes=res;try{var _config$api,_config$api2;if(!resolverModule){res.statusCode=404;res.end('Not Found');return;}const config=resolverModule.config||{};const bodyParser=((_config$api=config.api)==null?void 0:_config$api.bodyParser)!==false;const externalResolver=((_config$api2=config.api)==null?void 0:_config$api2.externalResolver)||false;// Parsing of cookies
-setLazyProp({req:apiReq},'cookies',getCookieParser(req));// Parsing query string
-apiReq.query=query;// Parsing preview data
-setLazyProp({req:apiReq},'previewData',()=>tryGetPreviewData(req,res,apiContext));// Checking if preview mode is enabled
-setLazyProp({req:apiReq},'preview',()=>apiReq.previewData!==false?true:undefined);// Parsing of body
-if(bodyParser){apiReq.body=await parseBody(apiReq,config.api&&config.api.bodyParser&&config.api.bodyParser.sizeLimit?config.api.bodyParser.sizeLimit:'1mb');}apiRes.status=statusCode=>sendStatusCode(apiRes,statusCode);apiRes.send=data=>sendData(apiReq,apiRes,data);apiRes.json=data=>sendJson(apiRes,data);apiRes.redirect=(statusOrUrl,url)=>redirect(apiRes,statusOrUrl,url);apiRes.setPreviewData=(data,options={})=>setPreviewData(apiRes,data,Object.assign({},apiContext,options));apiRes.clearPreviewData=()=>clearPreviewData(apiRes);const resolver=(0,_loadComponents.interopDefault)(resolverModule);let wasPiped=false;if(false){}// Call API route method
-await resolver(req,res);if(false){}}catch(err){if(err instanceof ApiError){sendError(apiRes,err.statusCode,err.message);}else{console.error(err);if(onError)await onError({err});if(propagateError){throw err;}sendError(apiRes,500,'Internal Server Error');}}}/**
- * Parse incoming message like `json` or `urlencoded`
- * @param req request object
- */async function parseBody(req,limit){const contentType=(0,_contentType.parse)(req.headers['content-type']||'text/plain');const{type,parameters}=contentType;const encoding=parameters.charset||'utf-8';let buffer;try{buffer=await(0,_rawBody.default)(req,{encoding,limit});}catch(e){if(e.type==='entity.too.large'){throw new ApiError(413,`Body exceeded ${limit} limit`);}else{throw new ApiError(400,'Invalid body');}}const body=buffer.toString();if(type==='application/json'||type==='application/ld+json'){return parseJson(body);}else if(type==='application/x-www-form-urlencoded'){const qs=__webpack_require__("8xkj");return qs.decode(body);}else{return body;}}/**
- * Parse `JSON` and handles invalid `JSON` strings
- * @param str `JSON` string
- */function parseJson(str){if(str.length===0){// special-case empty json body, as it's a common client-side mistake
-return{};}try{return JSON.parse(str);}catch(e){throw new ApiError(400,'Invalid JSON');}}/**
- * Parse cookies from `req` header
- * @param req request object
- */function getCookieParser(req){return function parseCookie(){const header=req.headers.cookie;if(!header){return{};}const{parse:parseCookieFn}=__webpack_require__("SN/4");return parseCookieFn(Array.isArray(header)?header.join(';'):header);};}/**
- *
- * @param res response object
- * @param statusCode `HTTP` status code of response
- */function sendStatusCode(res,statusCode){res.statusCode=statusCode;return res;}/**
- *
- * @param res response object
- * @param [statusOrUrl] `HTTP` status code of redirect
- * @param url URL of redirect
- */function redirect(res,statusOrUrl,url){if(typeof statusOrUrl==='string'){url=statusOrUrl;statusOrUrl=307;}if(typeof statusOrUrl!=='number'||typeof url!=='string'){throw new Error(`Invalid redirect arguments. Please use a single argument URL, e.g. res.redirect('/destination') or use a status code and URL, e.g. res.redirect(307, '/destination').`);}res.writeHead(statusOrUrl,{Location:url}).end();return res;}function sendEtagResponse(req,res,body){const etag=(0,_etag.default)(body);if((0,_fresh.default)(req.headers,{etag})){res.statusCode=304;res.end();return true;}res.setHeader('ETag',etag);return false;}/**
- * Send `any` body to response
- * @param req request object
- * @param res response object
- * @param body of response
- */function sendData(req,res,body){if(body===null){res.end();return;}const contentType=res.getHeader('Content-Type');if(body instanceof _stream.Stream){if(!contentType){res.setHeader('Content-Type','application/octet-stream');}body.pipe(res);return;}const isJSONLike=['object','number','boolean'].includes(typeof body);const stringifiedBody=isJSONLike?JSON.stringify(body):body;if(sendEtagResponse(req,res,stringifiedBody)){return;}if(Buffer.isBuffer(body)){if(!contentType){res.setHeader('Content-Type','application/octet-stream');}res.setHeader('Content-Length',body.length);res.end(body);return;}if(isJSONLike){res.setHeader('Content-Type','application/json; charset=utf-8');}res.setHeader('Content-Length',Buffer.byteLength(stringifiedBody));res.end(stringifiedBody);}/**
- * Send `JSON` object
- * @param res response object
- * @param jsonBody of data
- */function sendJson(res,jsonBody){// Set header to application/json
-res.setHeader('Content-Type','application/json; charset=utf-8');// Use send to handle request
-res.send(jsonBody);}const COOKIE_NAME_PRERENDER_BYPASS=`__prerender_bypass`;const COOKIE_NAME_PRERENDER_DATA=`__next_preview_data`;const SYMBOL_PREVIEW_DATA=Symbol(COOKIE_NAME_PRERENDER_DATA);exports.SYMBOL_PREVIEW_DATA=SYMBOL_PREVIEW_DATA;const SYMBOL_CLEARED_COOKIES=Symbol(COOKIE_NAME_PRERENDER_BYPASS);function tryGetPreviewData(req,res,options){// Read cached preview data if present
-if(SYMBOL_PREVIEW_DATA in req){return req[SYMBOL_PREVIEW_DATA];}const getCookies=getCookieParser(req);let cookies;try{cookies=getCookies();}catch(_unused){// TODO: warn
-return false;}const hasBypass=(COOKIE_NAME_PRERENDER_BYPASS in cookies);const hasData=(COOKIE_NAME_PRERENDER_DATA in cookies);// Case: neither cookie is set.
-if(!(hasBypass||hasData)){return false;}// Case: one cookie is set, but not the other.
-if(hasBypass!==hasData){clearPreviewData(res);return false;}// Case: preview session is for an old build.
-if(cookies[COOKIE_NAME_PRERENDER_BYPASS]!==options.previewModeId){clearPreviewData(res);return false;}const tokenPreviewData=cookies[COOKIE_NAME_PRERENDER_DATA];const jsonwebtoken=__webpack_require__("sJmi");let encryptedPreviewData;try{encryptedPreviewData=jsonwebtoken.verify(tokenPreviewData,options.previewModeSigningKey);}catch(_unused2){// TODO: warn
-clearPreviewData(res);return false;}const decryptedPreviewData=(0,_cryptoUtils.decryptWithSecret)(Buffer.from(options.previewModeEncryptionKey),encryptedPreviewData.data);try{// TODO: strict runtime type checking
-const data=JSON.parse(decryptedPreviewData);// Cache lookup
-Object.defineProperty(req,SYMBOL_PREVIEW_DATA,{value:data,enumerable:false});return data;}catch(_unused3){return false;}}function setPreviewData(res,data,// TODO: strict runtime type checking
-options){if(typeof options.previewModeId!=='string'||options.previewModeId.length<16){throw new Error('invariant: invalid previewModeId');}if(typeof options.previewModeEncryptionKey!=='string'||options.previewModeEncryptionKey.length<16){throw new Error('invariant: invalid previewModeEncryptionKey');}if(typeof options.previewModeSigningKey!=='string'||options.previewModeSigningKey.length<16){throw new Error('invariant: invalid previewModeSigningKey');}const jsonwebtoken=__webpack_require__("sJmi");const payload=jsonwebtoken.sign({data:(0,_cryptoUtils.encryptWithSecret)(Buffer.from(options.previewModeEncryptionKey),JSON.stringify(data))},options.previewModeSigningKey,{algorithm:'HS256',...(options.maxAge!==undefined?{expiresIn:options.maxAge}:undefined)});// limit preview mode cookie to 2KB since we shouldn't store too much
-// data here and browsers drop cookies over 4KB
-if(payload.length>2048){throw new Error(`Preview data is limited to 2KB currently, reduce how much data you are storing as preview data to continue`);}const{serialize}=__webpack_require__("SN/4");const previous=res.getHeader('Set-Cookie');res.setHeader(`Set-Cookie`,[...(typeof previous==='string'?[previous]:Array.isArray(previous)?previous:[]),serialize(COOKIE_NAME_PRERENDER_BYPASS,options.previewModeId,{httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/',...(options.maxAge!==undefined?{maxAge:options.maxAge}:undefined)}),serialize(COOKIE_NAME_PRERENDER_DATA,payload,{httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/',...(options.maxAge!==undefined?{maxAge:options.maxAge}:undefined)})]);return res;}function clearPreviewData(res){if(SYMBOL_CLEARED_COOKIES in res){return res;}const{serialize}=__webpack_require__("SN/4");const previous=res.getHeader('Set-Cookie');res.setHeader(`Set-Cookie`,[...(typeof previous==='string'?[previous]:Array.isArray(previous)?previous:[]),serialize(COOKIE_NAME_PRERENDER_BYPASS,'',{// To delete a cookie, set `expires` to a date in the past:
-// https://tools.ietf.org/html/rfc6265#section-4.1.1
-// `Max-Age: 0` is not valid, thus ignored, and the cookie is persisted.
-expires:new Date(0),httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/'}),serialize(COOKIE_NAME_PRERENDER_DATA,'',{// To delete a cookie, set `expires` to a date in the past:
-// https://tools.ietf.org/html/rfc6265#section-4.1.1
-// `Max-Age: 0` is not valid, thus ignored, and the cookie is persisted.
-expires:new Date(0),httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/'})]);Object.defineProperty(res,SYMBOL_CLEARED_COOKIES,{value:true,enumerable:false});return res;}/**
- * Custom error class
- */class ApiError extends Error{constructor(statusCode,message){super(message);this.statusCode=void 0;this.statusCode=statusCode;}}/**
- * Sends error in `response`
- * @param res response object
- * @param statusCode of response
- * @param message of response
- */exports.ApiError=ApiError;function sendError(res,statusCode,message){res.statusCode=statusCode;res.statusMessage=message;res.end(message);}/**
- * Execute getter function only if its needed
- * @param LazyProps `req` and `params` for lazyProp
- * @param prop name of property
- * @param getter function to get data
- */function setLazyProp({req,params},prop,getter){const opts={configurable:true,enumerable:true};const optsReset={...opts,writable:true};Object.defineProperty(req,prop,{...opts,get:()=>{let value=getter();if(params&&typeof params!=='boolean'){value={...value,...params};}// we set the property on the object to avoid recalculating it
-Object.defineProperty(req,prop,{...optsReset,value});return value;},set:value=>{Object.defineProperty(req,prop,{...optsReset,value});}});}
-//# sourceMappingURL=api-utils.js.map
-
-/***/ }),
-
-/***/ "PJMN":
-/***/ (function(module, exports) {
-
-module.exports = require("crypto");
-
-/***/ }),
-
-/***/ "PJv+":
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "PJv+";
-
-/***/ }),
-
-/***/ "PRL6":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-exports.__esModule=true;exports.isBlockedPage=isBlockedPage;exports.cleanAmpPath=cleanAmpPath;var _constants=__webpack_require__("w7wo");function isBlockedPage(pathname){return _constants.BLOCKED_PAGES.includes(pathname);}function cleanAmpPath(pathname){if(pathname.match(/\?amp=(y|yes|true|1)/)){pathname=pathname.replace(/\?amp=(y|yes|true|1)&?/,'?');}if(pathname.match(/&amp=(y|yes|true|1)/)){pathname=pathname.replace(/&amp=(y|yes|true|1)/,'');}pathname=pathname.replace(/\?$/,'');return pathname;}
-//# sourceMappingURL=utils.js.map
-
-/***/ }),
-
-/***/ "QIKc":
+/***/ "OVQe":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2822,10 +2728,10 @@ __webpack_require__.r(__webpack_exports__);
         getStaticPaths,
         reactLoadableManifest,
         canonicalBase: "",
-        buildId: "Wwheg5vlODKMgIqLqWSGt",
+        buildId: "ckXE3fQRlBtlBzVS1F3zE",
         assetPrefix: "",
         runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"5b310156185e34f6d5a77d15569d161d",previewModeSigningKey:"a4a21ce1468da51cf5733e3e6d4618be5ec1265091695490f80f1cfc53c5f9a1",previewModeEncryptionKey:"e840f1bcb369807f85d7d5df3cb3a7ba30c70e0a465318767b6f577097de4731"},
+        previewProps: {previewModeId:"6565c2f983fc72bfbddf8ce0e3d9f58a",previewModeSigningKey:"31d4c457e47c7a3148dfda1789695c8c0a4481def29dd28d1dc776692a7aeeb0",previewModeEncryptionKey:"1831bb078e5869c907416a5f5062d6f77f6a188124ebe1d07e3afe9da90dc882"},
         env: process.env,
         basePath: "",
         ..._renderOpts
@@ -2864,7 +2770,7 @@ __webpack_require__.r(__webpack_exports__);
           _nextData = true;
           parsedUrl.pathname = getRouteNoAssetPath(
             parsedUrl.pathname.replace(
-              new RegExp('/_next/data/Wwheg5vlODKMgIqLqWSGt/'),
+              new RegExp('/_next/data/ckXE3fQRlBtlBzVS1F3zE/'),
               '/'
             ),
             '.json'
@@ -3051,6 +2957,121 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
   
+
+/***/ }),
+
+/***/ "OaTm":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+exports.__esModule=true;exports.default=optimize;async function optimize(html,config){let AmpOptimizer;try{AmpOptimizer=__webpack_require__("8C61");}catch(_){return html;}const optimizer=AmpOptimizer.create(config);return optimizer.transformHtml(html,config);}
+//# sourceMappingURL=optimize-amp.js.map
+
+/***/ }),
+
+/***/ "PCLx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+exports.__esModule=true;exports.apiResolver=apiResolver;exports.parseBody=parseBody;exports.getCookieParser=getCookieParser;exports.sendStatusCode=sendStatusCode;exports.redirect=redirect;exports.sendData=sendData;exports.sendJson=sendJson;exports.tryGetPreviewData=tryGetPreviewData;exports.sendError=sendError;exports.setLazyProp=setLazyProp;exports.ApiError=exports.SYMBOL_PREVIEW_DATA=void 0;var _contentType=__webpack_require__("g6Ax");var _etag=_interopRequireDefault(__webpack_require__("Z3Jd"));var _fresh=_interopRequireDefault(__webpack_require__("IuXR"));var _rawBody=_interopRequireDefault(__webpack_require__("CMUe"));var _stream=__webpack_require__("msIP");var _utils=__webpack_require__("g/15");var _cryptoUtils=__webpack_require__("S6s8");var _loadComponents=__webpack_require__("AWHq");function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}async function apiResolver(req,res,query,resolverModule,apiContext,propagateError,onError){const apiReq=req;const apiRes=res;try{var _config$api,_config$api2;if(!resolverModule){res.statusCode=404;res.end('Not Found');return;}const config=resolverModule.config||{};const bodyParser=((_config$api=config.api)==null?void 0:_config$api.bodyParser)!==false;const externalResolver=((_config$api2=config.api)==null?void 0:_config$api2.externalResolver)||false;// Parsing of cookies
+setLazyProp({req:apiReq},'cookies',getCookieParser(req));// Parsing query string
+apiReq.query=query;// Parsing preview data
+setLazyProp({req:apiReq},'previewData',()=>tryGetPreviewData(req,res,apiContext));// Checking if preview mode is enabled
+setLazyProp({req:apiReq},'preview',()=>apiReq.previewData!==false?true:undefined);// Parsing of body
+if(bodyParser){apiReq.body=await parseBody(apiReq,config.api&&config.api.bodyParser&&config.api.bodyParser.sizeLimit?config.api.bodyParser.sizeLimit:'1mb');}apiRes.status=statusCode=>sendStatusCode(apiRes,statusCode);apiRes.send=data=>sendData(apiReq,apiRes,data);apiRes.json=data=>sendJson(apiRes,data);apiRes.redirect=(statusOrUrl,url)=>redirect(apiRes,statusOrUrl,url);apiRes.setPreviewData=(data,options={})=>setPreviewData(apiRes,data,Object.assign({},apiContext,options));apiRes.clearPreviewData=()=>clearPreviewData(apiRes);const resolver=(0,_loadComponents.interopDefault)(resolverModule);let wasPiped=false;if(false){}// Call API route method
+await resolver(req,res);if(false){}}catch(err){if(err instanceof ApiError){sendError(apiRes,err.statusCode,err.message);}else{console.error(err);if(onError)await onError({err});if(propagateError){throw err;}sendError(apiRes,500,'Internal Server Error');}}}/**
+ * Parse incoming message like `json` or `urlencoded`
+ * @param req request object
+ */async function parseBody(req,limit){const contentType=(0,_contentType.parse)(req.headers['content-type']||'text/plain');const{type,parameters}=contentType;const encoding=parameters.charset||'utf-8';let buffer;try{buffer=await(0,_rawBody.default)(req,{encoding,limit});}catch(e){if(e.type==='entity.too.large'){throw new ApiError(413,`Body exceeded ${limit} limit`);}else{throw new ApiError(400,'Invalid body');}}const body=buffer.toString();if(type==='application/json'||type==='application/ld+json'){return parseJson(body);}else if(type==='application/x-www-form-urlencoded'){const qs=__webpack_require__("8xkj");return qs.decode(body);}else{return body;}}/**
+ * Parse `JSON` and handles invalid `JSON` strings
+ * @param str `JSON` string
+ */function parseJson(str){if(str.length===0){// special-case empty json body, as it's a common client-side mistake
+return{};}try{return JSON.parse(str);}catch(e){throw new ApiError(400,'Invalid JSON');}}/**
+ * Parse cookies from `req` header
+ * @param req request object
+ */function getCookieParser(req){return function parseCookie(){const header=req.headers.cookie;if(!header){return{};}const{parse:parseCookieFn}=__webpack_require__("SN/4");return parseCookieFn(Array.isArray(header)?header.join(';'):header);};}/**
+ *
+ * @param res response object
+ * @param statusCode `HTTP` status code of response
+ */function sendStatusCode(res,statusCode){res.statusCode=statusCode;return res;}/**
+ *
+ * @param res response object
+ * @param [statusOrUrl] `HTTP` status code of redirect
+ * @param url URL of redirect
+ */function redirect(res,statusOrUrl,url){if(typeof statusOrUrl==='string'){url=statusOrUrl;statusOrUrl=307;}if(typeof statusOrUrl!=='number'||typeof url!=='string'){throw new Error(`Invalid redirect arguments. Please use a single argument URL, e.g. res.redirect('/destination') or use a status code and URL, e.g. res.redirect(307, '/destination').`);}res.writeHead(statusOrUrl,{Location:url}).end();return res;}function sendEtagResponse(req,res,body){const etag=(0,_etag.default)(body);if((0,_fresh.default)(req.headers,{etag})){res.statusCode=304;res.end();return true;}res.setHeader('ETag',etag);return false;}/**
+ * Send `any` body to response
+ * @param req request object
+ * @param res response object
+ * @param body of response
+ */function sendData(req,res,body){if(body===null){res.end();return;}const contentType=res.getHeader('Content-Type');if(body instanceof _stream.Stream){if(!contentType){res.setHeader('Content-Type','application/octet-stream');}body.pipe(res);return;}const isJSONLike=['object','number','boolean'].includes(typeof body);const stringifiedBody=isJSONLike?JSON.stringify(body):body;if(sendEtagResponse(req,res,stringifiedBody)){return;}if(Buffer.isBuffer(body)){if(!contentType){res.setHeader('Content-Type','application/octet-stream');}res.setHeader('Content-Length',body.length);res.end(body);return;}if(isJSONLike){res.setHeader('Content-Type','application/json; charset=utf-8');}res.setHeader('Content-Length',Buffer.byteLength(stringifiedBody));res.end(stringifiedBody);}/**
+ * Send `JSON` object
+ * @param res response object
+ * @param jsonBody of data
+ */function sendJson(res,jsonBody){// Set header to application/json
+res.setHeader('Content-Type','application/json; charset=utf-8');// Use send to handle request
+res.send(jsonBody);}const COOKIE_NAME_PRERENDER_BYPASS=`__prerender_bypass`;const COOKIE_NAME_PRERENDER_DATA=`__next_preview_data`;const SYMBOL_PREVIEW_DATA=Symbol(COOKIE_NAME_PRERENDER_DATA);exports.SYMBOL_PREVIEW_DATA=SYMBOL_PREVIEW_DATA;const SYMBOL_CLEARED_COOKIES=Symbol(COOKIE_NAME_PRERENDER_BYPASS);function tryGetPreviewData(req,res,options){// Read cached preview data if present
+if(SYMBOL_PREVIEW_DATA in req){return req[SYMBOL_PREVIEW_DATA];}const getCookies=getCookieParser(req);let cookies;try{cookies=getCookies();}catch(_unused){// TODO: warn
+return false;}const hasBypass=(COOKIE_NAME_PRERENDER_BYPASS in cookies);const hasData=(COOKIE_NAME_PRERENDER_DATA in cookies);// Case: neither cookie is set.
+if(!(hasBypass||hasData)){return false;}// Case: one cookie is set, but not the other.
+if(hasBypass!==hasData){clearPreviewData(res);return false;}// Case: preview session is for an old build.
+if(cookies[COOKIE_NAME_PRERENDER_BYPASS]!==options.previewModeId){clearPreviewData(res);return false;}const tokenPreviewData=cookies[COOKIE_NAME_PRERENDER_DATA];const jsonwebtoken=__webpack_require__("sJmi");let encryptedPreviewData;try{encryptedPreviewData=jsonwebtoken.verify(tokenPreviewData,options.previewModeSigningKey);}catch(_unused2){// TODO: warn
+clearPreviewData(res);return false;}const decryptedPreviewData=(0,_cryptoUtils.decryptWithSecret)(Buffer.from(options.previewModeEncryptionKey),encryptedPreviewData.data);try{// TODO: strict runtime type checking
+const data=JSON.parse(decryptedPreviewData);// Cache lookup
+Object.defineProperty(req,SYMBOL_PREVIEW_DATA,{value:data,enumerable:false});return data;}catch(_unused3){return false;}}function setPreviewData(res,data,// TODO: strict runtime type checking
+options){if(typeof options.previewModeId!=='string'||options.previewModeId.length<16){throw new Error('invariant: invalid previewModeId');}if(typeof options.previewModeEncryptionKey!=='string'||options.previewModeEncryptionKey.length<16){throw new Error('invariant: invalid previewModeEncryptionKey');}if(typeof options.previewModeSigningKey!=='string'||options.previewModeSigningKey.length<16){throw new Error('invariant: invalid previewModeSigningKey');}const jsonwebtoken=__webpack_require__("sJmi");const payload=jsonwebtoken.sign({data:(0,_cryptoUtils.encryptWithSecret)(Buffer.from(options.previewModeEncryptionKey),JSON.stringify(data))},options.previewModeSigningKey,{algorithm:'HS256',...(options.maxAge!==undefined?{expiresIn:options.maxAge}:undefined)});// limit preview mode cookie to 2KB since we shouldn't store too much
+// data here and browsers drop cookies over 4KB
+if(payload.length>2048){throw new Error(`Preview data is limited to 2KB currently, reduce how much data you are storing as preview data to continue`);}const{serialize}=__webpack_require__("SN/4");const previous=res.getHeader('Set-Cookie');res.setHeader(`Set-Cookie`,[...(typeof previous==='string'?[previous]:Array.isArray(previous)?previous:[]),serialize(COOKIE_NAME_PRERENDER_BYPASS,options.previewModeId,{httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/',...(options.maxAge!==undefined?{maxAge:options.maxAge}:undefined)}),serialize(COOKIE_NAME_PRERENDER_DATA,payload,{httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/',...(options.maxAge!==undefined?{maxAge:options.maxAge}:undefined)})]);return res;}function clearPreviewData(res){if(SYMBOL_CLEARED_COOKIES in res){return res;}const{serialize}=__webpack_require__("SN/4");const previous=res.getHeader('Set-Cookie');res.setHeader(`Set-Cookie`,[...(typeof previous==='string'?[previous]:Array.isArray(previous)?previous:[]),serialize(COOKIE_NAME_PRERENDER_BYPASS,'',{// To delete a cookie, set `expires` to a date in the past:
+// https://tools.ietf.org/html/rfc6265#section-4.1.1
+// `Max-Age: 0` is not valid, thus ignored, and the cookie is persisted.
+expires:new Date(0),httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/'}),serialize(COOKIE_NAME_PRERENDER_DATA,'',{// To delete a cookie, set `expires` to a date in the past:
+// https://tools.ietf.org/html/rfc6265#section-4.1.1
+// `Max-Age: 0` is not valid, thus ignored, and the cookie is persisted.
+expires:new Date(0),httpOnly:true,sameSite: true?'none':undefined,secure:"production"!=='development',path:'/'})]);Object.defineProperty(res,SYMBOL_CLEARED_COOKIES,{value:true,enumerable:false});return res;}/**
+ * Custom error class
+ */class ApiError extends Error{constructor(statusCode,message){super(message);this.statusCode=void 0;this.statusCode=statusCode;}}/**
+ * Sends error in `response`
+ * @param res response object
+ * @param statusCode of response
+ * @param message of response
+ */exports.ApiError=ApiError;function sendError(res,statusCode,message){res.statusCode=statusCode;res.statusMessage=message;res.end(message);}/**
+ * Execute getter function only if its needed
+ * @param LazyProps `req` and `params` for lazyProp
+ * @param prop name of property
+ * @param getter function to get data
+ */function setLazyProp({req,params},prop,getter){const opts={configurable:true,enumerable:true};const optsReset={...opts,writable:true};Object.defineProperty(req,prop,{...opts,get:()=>{let value=getter();if(params&&typeof params!=='boolean'){value={...value,...params};}// we set the property on the object to avoid recalculating it
+Object.defineProperty(req,prop,{...optsReset,value});return value;},set:value=>{Object.defineProperty(req,prop,{...optsReset,value});}});}
+//# sourceMappingURL=api-utils.js.map
+
+/***/ }),
+
+/***/ "PJMN":
+/***/ (function(module, exports) {
+
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "PJv+":
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = "PJv+";
+
+/***/ }),
+
+/***/ "PRL6":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+exports.__esModule=true;exports.isBlockedPage=isBlockedPage;exports.cleanAmpPath=cleanAmpPath;var _constants=__webpack_require__("w7wo");function isBlockedPage(pathname){return _constants.BLOCKED_PAGES.includes(pathname);}function cleanAmpPath(pathname){if(pathname.match(/\?amp=(y|yes|true|1)/)){pathname=pathname.replace(/\?amp=(y|yes|true|1)&?/,'?');}if(pathname.match(/&amp=(y|yes|true|1)/)){pathname=pathname.replace(/&amp=(y|yes|true|1)/,'');}pathname=pathname.replace(/\?$/,'');return pathname;}
+//# sourceMappingURL=utils.js.map
 
 /***/ }),
 
@@ -4549,6 +4570,17 @@ module.exports = function(module) {
 
 /* WEBPACK VAR INJECTION */(function(__dirname) {module.exports=function(t,e){"use strict";var r={};function __webpack_require__(e){if(r[e]){return r[e].exports}var n=r[e]={i:e,l:false,exports:{}};t[e].call(n.exports,n,n.exports,__webpack_require__);n.l=true;return n.exports}__webpack_require__.ab=__dirname+"/";function startup(){return __webpack_require__(580)}return startup()}({417:function(t){t.exports=__webpack_require__("PJMN")},580:function(t,e,r){"use strict";t.exports=etag;var n=r(417);var i=r(747).Stats;var a=Object.prototype.toString;function entitytag(t){if(t.length===0){return'"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"'}var e=n.createHash("sha1").update(t,"utf8").digest("base64").substring(0,27);var r=typeof t==="string"?Buffer.byteLength(t,"utf8"):t.length;return'"'+r.toString(16)+"-"+e+'"'}function etag(t,e){if(t==null){throw new TypeError("argument entity is required")}var r=isstats(t);var n=e&&typeof e.weak==="boolean"?e.weak:r;if(!r&&typeof t!=="string"&&!Buffer.isBuffer(t)){throw new TypeError("argument entity must be string, Buffer, or fs.Stats")}var i=r?stattag(t):entitytag(t);return n?"W/"+i:i}function isstats(t){if(typeof i==="function"&&t instanceof i){return true}return t&&typeof t==="object"&&"ctime"in t&&a.call(t.ctime)==="[object Date]"&&"mtime"in t&&a.call(t.mtime)==="[object Date]"&&"ino"in t&&typeof t.ino==="number"&&"size"in t&&typeof t.size==="number"}function stattag(t){var e=t.mtime.getTime().toString(16);var r=t.size.toString(16);return'"'+r+"-"+e+'"'}},747:function(t){t.exports=__webpack_require__("mw/K")}});
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
+
+/***/ }),
+
+/***/ "ZWax":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"footer": "Layout_footer__cIVSd"
+};
+
 
 /***/ }),
 
