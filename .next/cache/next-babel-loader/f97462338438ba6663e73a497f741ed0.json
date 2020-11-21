@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nexport default function Portfolio(_ref) {\n  var entries = _ref.entries;\n  // I want to return a list of entries\n  return /*#__PURE__*/_jsx(\"section\", {\n    children: /*#__PURE__*/_jsx(\"h2\", {\n      children: \"Things I've worked on\"\n    })\n  });\n}","map":null,"metadata":{},"sourceType":"module"}
