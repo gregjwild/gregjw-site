@@ -1,13 +1,17 @@
 import Layout from "../components/Layout";
+import HeroBanner from "../components/HeroBanner";
+import ElevatorPitch from "../components/ElevatorPitch";
+import Portfolio from "../components/Portfolio";
+import Interests from "../components/Interests";
 
 /* Here's what we're rendering in the index */
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
-      <h2 className="title">Good day!</h2>
-      <main>
-        <p>TODO</p>
-      </main>
+        <HeroBanner strapline="All things Greg J. Wild, all the time."/>
+        <ElevatorPitch />
+        <Portfolio />
+        <Interests />
     </Layout>
   )
 }

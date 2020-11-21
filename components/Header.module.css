@@ -1,6 +1,7 @@
 .Header {
-    margin: 0 auto;
-    text-align: center;
+    margin: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .navItem {
