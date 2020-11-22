@@ -10,7 +10,7 @@ export default function Layout({ children, pageTitle, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <Header />
-      <main style={{margin: '2.5% 20%'}}>
+      <main style={{margin: '0 5%'}}>
         <section className="layout" >
           <div className="content">{children}</div>
         </section>

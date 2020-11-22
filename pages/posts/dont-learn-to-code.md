@@ -1,5 +1,5 @@
 ---
-title: "Don't learn to code! (Well, maybe don't.)"
+title: "You might not need to be able to code"
 date: "2020-11-14"
 status: "draft"
 summary: "There are a whole range of jobs in tech that don't require that you become a software engineer."
