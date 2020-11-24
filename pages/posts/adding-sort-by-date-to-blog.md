@@ -1,6 +1,7 @@
 ---
 title: "How I added sort-by-date to the blog"
 date: "2020-11-17"
+updated: "2020-11-24"
 status: "published"
 summary: "A quick summary of where I ran into trouble when adding sort by date to the blog"
 tags: "technical-notes"
@@ -36,3 +37,11 @@ Finally, to prevent the problem I mentioned with the components requiring serial
     })
 
 [Check out the git commit](https://github.com/gregjwild/gregjw-site/commit/d0318643b73c2411bc1159edd996624c21fcb460) if you're interested in seeing the rest of the site's code.
+
+Update:
+
+I happened to get chatting about the code I'd written to deal with sorting in place. There's no _real_ need to change it, but realized I could use a spread operator instead. So, let's do that! 
+
+    const postsSorted = [...postsWithDatesConverted(postsRaw)]
+        .sort((a, b) => a.frontmatter.date - b.frontmatter.date)
+        .reverse()
