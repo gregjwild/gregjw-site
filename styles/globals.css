@@ -28,9 +28,10 @@ h1, h2, h3 {
 
 #__next {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 1fr 50% 1fr;
   grid-template-areas: 
-    'header'
-    'main'
-    'footer';
+    'header header header' 
+    '....... main .......'
+    '...... footer ......';
 }

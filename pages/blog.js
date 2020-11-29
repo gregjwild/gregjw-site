@@ -57,8 +57,7 @@ export async function getStaticProps() {
     We use slice to avoid mutating postsRaw in place.
     We need to reverse the array, otherwise they'll be displayed oldest-first.
   */
-  const postsSorted = postsWithDatesConverted(postsRaw)
-    .slice()
+  const postsSorted = [...postsWithDatesConverted(postsRaw)]
     .sort((a, b) => a.frontmatter.date - b.frontmatter.date)
     .reverse()
 

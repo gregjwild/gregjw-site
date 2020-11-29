@@ -1,8 +1,11 @@
-.Header {
+.header {
+    grid-area: header;
     display: flex;
+    flex-direction: row;
     align-items: center;
-}
+    margin-left: 2em;
+  }
 
-.navItem {
-    margin: 0 1em;
-}
+  .navItem {
+      margin: 0 1em;
+  }
