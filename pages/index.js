@@ -11,6 +11,7 @@ const Index = ({ posts, title, description, ...props }) => {
         <HeroBanner strapline="All things Greg J. Wild, all the time."/>
         <ElevatorPitch />
         <Portfolio />
+        <hr/>
         <Interests />
     </Layout>
   )
