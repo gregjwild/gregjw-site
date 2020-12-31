@@ -18,7 +18,7 @@ const About = ({ title, description, ...props }) => {
   )
 }
 
-export default About
+export default About;
 
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`)
